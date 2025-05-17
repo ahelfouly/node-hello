@@ -1,10 +1,10 @@
 name: Build, test, and push container image to docker hub
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_run:
+    workflows: ["Lint Node.js App"]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
