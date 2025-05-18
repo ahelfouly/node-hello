@@ -25,3 +25,13 @@ git clone https://github.com/ahelfouly/node-hello.git
 cd node-hello
 npm install
 npm start
+```
+---
+
+## Running as container
+```bash
+git clone https://github.com/ahelfouly/node-hello.git
+cd node-hello
+docker build -t node-hello:latest .
+docker run -d -p 8080:3000 nodehello:latest
+```
