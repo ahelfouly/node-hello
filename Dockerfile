@@ -4,7 +4,7 @@ WORKDIR /home/node/app
 
 COPY --chown=node:node package*.json index.js newrelic.js ./
 
-RUN chown -R nodeuser:nodegroup /home/node/app && npm install --production
+RUN chown -R node:node /home/node/app && npm install --production
 
 USER node
 
