@@ -1,9 +1,27 @@
-# Node Hello World
+# Node Hello
 
-Simple node.js app that servers "hello world"
+Forked from [johnpapa/node-hello](https://github.com/johnpapa/node-hello), simple webserver to containerize and deploy via terraform
 
-Great for testing simple deployments to the cloud
+## Features
 
-## Run It
+- Basic Node.js HTTP server
+- CI/CD pipeline for linting and containerization
+- Auto-deployment to Docker Hub
+- Terraform code for local deployment
 
-`npm start`
+---
+
+## Prerequisites
+
+- Node.js ≥ 18 (or use Docker)
+- [Docker](https://www.docker.com/)
+- (Optional) [Terraform](https://www.terraform.io/) for local deployment
+---
+
+## Installation
+
+```bash
+git clone https://github.com/ahelfouly/node-hello.git
+cd node-hello
+npm install
+npm start
