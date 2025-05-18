@@ -27,6 +27,15 @@ npm install
 npm start
 ```
 ---
+## CI/CD
+- Use the apporpriate values for `DOCKER_USERNAME` and `DOCKER_PASSWORD`
+- Make sure to save the variables as secrets
+- The file `lint.yml` defines worklow to lint the code
+- The file `containerize.yml` defines workflow to build the container image, test connection over port 3000 and only then push to dockerhub.
+- The containerization workflow will automatically trigger on successful validation of linting
+- Both workflows defined can be triggered manually
+
+---
 
 ## Running as container
 ```bash
